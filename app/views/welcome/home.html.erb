@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>My HomePage</title>
+		<style>
+      div.container {
+				width: 100%;
+							
+			}
+			header {
+				color: white;				
+			
+				padding: 1em;			    
+			    background-color: black;
+			    
+			    text-align: center;
+				}
+			nav {
+				float: left;
+				margin: 0;
+			}
+
+			article {				
+				overflow: auto;
+				margin-left: 200px;
+				height: 350px;
+			}
+			footer {
+				background-color: black;
+				text-align: center;
+				position: fixed;
+				width: 100%;
+				bottom:0;
+				left:0;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+       <h1><%= image_tag 'car.jpg',:class => "car_image"%>
+				
+			 Bethany AutoDetailing</h1>
+			</header>
+			<nav>
+				<ul>
+          <li><%= link_to "Home", root_path%></li>
+          <li><%= link_to "About", about_path%></li>			
+				</ul>
+			</nav>
+			<article>
+				<h2>Welcome...</h2>
+
+					<p>ESTABLISHED in 2003
+					Bethany® Auto Detailing is your local friendly and professional auto cleaning service in the heart of our beautiful city. 
+					We are located in the "Mississauga Executive Centre" just east of the Square One Shopping Centre.</p>
+
+					<p>At Bethany®, we offer professionals and those with busy lifestyles, a reliable cleaning service that is both accommodating and convenient. </p>
+					<p>Along with competitive pricing and premium customer service-your satisfaction is always guaranteed! By specializing in results, we separate ourselves from our competitors and clients keep coming back for the Bethany® Clean that only we can provide.</p>
+
+					<p>GET Bethany® CLEAN! Satisfaction guaranteed!</p>
+			</article>
+			<footer>Copyright &copy; bethany.com</footer>
+		</div>
+
+	</body>
+</html>
+
